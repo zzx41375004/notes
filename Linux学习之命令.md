@@ -1,5 +1,8 @@
 # Linux学习
 
+# Fira Code字体
+[how to install Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing)
+
 # 查找
 
 ~~~

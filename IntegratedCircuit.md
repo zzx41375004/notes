@@ -1,4 +1,4 @@
-#第一节课
+# 第一节课
 ~~~
 开卷考试，可以带电脑
 Vacuum Tube 电子管
@@ -9,7 +9,7 @@ TI: Texas Instruments
 DSP-Digital Signal Processor  数字信号处理器
 MOSFET Scaling MOS晶体管比例缩放特性
 ~~~
-#second class
+# second class
 PN结原理，BJT与MOS器件，CMOS电路，波特图，ADC，运算放大器
 spice (simulation program with integrated circuit emphasis)
 famous software: spectre, hspice, eldo, pspice
@@ -20,3 +20,9 @@ famous software: spectre, hspice, eldo, pspice
 5. Increment Time
 6. End of Time Interval
 功能定义 》 电路生成 》 功能验证 》 测试生成 》 布局布线 》 后仿真
+
+# 第三节课
+金属-半导体结
+发光二极管LED
+太阳能电池
+
