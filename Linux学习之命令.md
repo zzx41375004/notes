@@ -1,10 +1,62 @@
 # Linux学习
 
+# bt and ed2k
+```
+run: qbittorrent or amuled
+```
+
+# deb包
+
+```
+arch可以用debtap, 将deb包转换成pkg
+```
+
+# dwm
+
+```
+# 移动焦点至左边屏幕
+Mod + < 
+# 移动焦点至右边屏幕
+Mod + >
+# 移动窗口至左边屏幕
+Mod + shift + <
+# 移动窗口至右边屏幕
+Mod + shift + >
+```
+
+# 权限
+
+## 文件权限管理
+
+```
+chmod\chgrp(改变组)\chown(改变拥有着)
+chgrp wheel dir/doc
+```
+
+# GBK编码显示异常
+
+vim可以修改fileencondings
+
+~~~(.vim)
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+~~~
+
+# xev命令
+
+[tutorior](https://blog.csdn.net/weixin_43889478/article/details/108937727)
+
+使用xev命令查看，按下的键都会在终端显示其信息
+
+# gnome交换caps和esc
+
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:escape']"
+
 # 显示电池状态
 
 upower -i `upower -e | grep 'BAT'`
 
 # Fira Code字体
+
 [how to install Fira Code](https://github.com/tonsky/FiraCode/wiki/Installing)
 
 # 查找
@@ -90,6 +142,14 @@ sudo pacman -S xclip
 ~~~
 安装shadowsocks-libev
 可以使用shadowsocks-qt5进行配置
+
+使用v2ray:
+如果v2rayA正常运行（启动或许需要一定时间）则开放2017作为管理端口，通过浏览器访问即可进行管理。
+导入并连接正常工作的节点后，设置全局透明代理即可使用。
+如果不使用全局透明代理，可使用浏览器插件如SwitchyOmega通过下述端口进行代理：
+或使用桌面环境提供的系统代理进行达到类似全局代理的效果。
+注意，如果通过archlinuxcn源安装，需要运行systemctl enable --now v2raya。
+
 ~~~
 
 ## global privoxy
@@ -518,6 +578,17 @@ set match-hidden-files off
 
 # SSH
 
+## X11配置，共享粘帖板等
+
+[Linux DISPLAY 变量设置](https://blog.csdn.net/qq_39101111/article/details/78729647)
+```
+在2台Linux机器之间, 如果设置服务器端配置文件/etc/ssh/sshd_config中包含
+X11Forwarding no
+客户端配置文件/etc/ssh/ssh_config包含
+ForwardX11 yes
+则从客户端ssh到服务器端后会自动设置DISPLAY环境变量, 允许在服务器端执行的图形程序将图形显示在客户端上. 在服务器上查看环境变量显示如下(这个结果不同的时候并不相同)
+```
+
 ## windows terminal 配置ssh
 
 [windows terminal连接远程ssh并传输文件](https://www.jianshu.com/p/7c66c6a5950d)
@@ -593,6 +664,13 @@ r !filget zzx
 
 
 # vim
+
+## help
+
+```
+[编写vim脚本](http://vimcdoc.sourceforge.net/doc/usr_41.html)
+[5minutes](https://zhuanlan.zhihu.com/p/37352209)
+```
 
 ## 更改光标颜色
 

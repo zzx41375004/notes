@@ -31,3 +31,7 @@ XX XX XX XX（修改后的按键扫描码（在前）+ 原按键的扫描码（�
 XX XX XX XX（另一个要替换的按键，同上）
 ~~~
 ![](https://i0.hdslb.com/bfs/article/bd17c1ff9c6ae603ec6959f469a6125f32cd13e9.png@1534w_1200h.webp)
+# 破解
+
+小马破解  
+kms
