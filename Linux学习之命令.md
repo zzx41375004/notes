@@ -1,5 +1,13 @@
 # Linux学习
 
+# 工具介绍
+
+(website)[https://blog.csdn.net/lnxfei/article/details/43968609]
+
+# ranger
+
+(tutorior)[https://blog.csdn.net/hideonlie/article/details/103719698]
+
 # fuser
 
 查看文件被哪个进程使用
