@@ -1,5 +1,19 @@
 # Linux学习
 
+# fuser
+
+查看文件被哪个进程使用
+
+```
+fuser -mv /mnt/share
+```
+
+# smb 与 cifs
+
+[tutorior](https://blog.csdn.net/ly2020_/article/details/90647086?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&dist_request_id=1332049.21902.16195245713015143&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control)
+```
+subclient -L <UNC>
+```
 # bt and ed2k
 ```
 run: qbittorrent or amuled
@@ -15,7 +29,7 @@ arch可以用debtap, 将deb包转换成pkg
 
 ```
 # 移动焦点至左边屏幕
-Mod + < 
+Mod + <
 # 移动焦点至右边屏幕
 Mod + >
 # 移动窗口至左边屏幕
@@ -206,7 +220,7 @@ iptables -t nat -A REDSOCKS -d 192.168.0.0/16 -j RETURN
 iptables -t nat -A REDSOCKS -d 224.0.0.0/4 -j RETURN
 iptables -t nat -A REDSOCKS -d 240.0.0.0/4 -j RETURN
 # Anything else should be redirected to port 12345
-iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345 
+iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
 iptables -t nat -A OUTPUT -p tcp --dport 443 -j REDSOCKS
 iptables -t nat -A OUTPUT -p tcp --dport 80 -j REDSOCKS
 
@@ -299,10 +313,10 @@ f: point out the file
 ```
 linux下最常用的打包程序就是tar了，使用tar程序打出来的包我们常称为tar包，tar包文件的命令通常都是以.tar结尾的。生成tar包后，就可以用其它的程序来进行压缩。
 1．命令格式：
-tar[必要参数][选择参数][文件] 
+tar[必要参数][选择参数][文件]
 
 2．命令功能：
-用来压缩和解压文件。tar本身不具有压缩功能。他是调用压缩功能实现的 
+用来压缩和解压文件。tar本身不具有压缩功能。他是调用压缩功能实现的
 
 3．命令参数：
 必要参数有如下：
@@ -340,7 +354,7 @@ https://www.runoob.com/manual/git-guide/
 ```
 
 ```
-git clone -b <name> <path>	//b means branch 
+git clone -b <name> <path>	//b means branch
 git add <filename>?
 git add *
 git commit -m "代码提交信息"
@@ -472,7 +486,7 @@ git branch -m oldname newname	//modify local, if you want to modify origin name,
 ```
 system()	\\system(“find / -uname \”*mmcblk*\””)
 popen()		\\FILE  *fp=popen("bash /home/book/shell/test.sh","r");
-exec函数族		
+exec函数族
 \\char *argv[]={"find","/sys/block/","-name","\"*mmcblk*\"",NULL};
 \\ret=execvp("find",argv);
 ```
@@ -569,7 +583,7 @@ fcitx-config-gtk3	//配置？干啥用的？
 
 # bash
 
-~~~ 
+~~~
 //.inputrc
 set completion-ignore-case on
 set show-all-if-ambiguous on
@@ -652,7 +666,7 @@ mv A B
 # figlet
 
 ~~~
-figlet zzx	
+figlet zzx
 //show "zzx" in command line
 ~~~
 
@@ -710,7 +724,7 @@ help i_CTRL-J	//查看CTRL-I的键位
 <Up>            cursor-up                       cursor-up cursor_up
 <Down>          cursor-down                     cursor-down cursor_down
 <Left>          cursor-left                     cursor-left cursor_left
-<Right>         cursor-right                    cursor-right cursor_right 
+<Right>         cursor-right                    cursor-right cursor_right
 <S-Up>          shift-cursor-up
 <S-Down>        shift-cursor-down
 <S-Left>        shift-cursor-left
@@ -722,7 +736,7 @@ help i_CTRL-J	//查看CTRL-I的键位
 ### 分屏操作
 
 ~~~
-#取消其它分屏，只保留当前分屏	:only 
+#取消其它分屏，只保留当前分屏	:only
 #或者 [CTRL] W o
 #退出当前所在分屏 :q
 
