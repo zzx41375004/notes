@@ -1,5 +1,10 @@
 # Linux学习
 
+# 声卡Master
+
+修改默认声卡
+(aplay l; /etc/asound.conf)[https://blog.csdn.net/weixin_33881041/article/details/91706335]
+
 # auto mount
 
 (fstab UUID blkid)[https://zhuanlan.zhihu.com/p/163001267]
@@ -8,7 +13,13 @@
 # 工具介绍
 
 (website)[https://blog.csdn.net/lnxfei/article/details/43968609]
-蓝牙：blueberry
+
+bluetooth：blueberry
+filemanager(gui): thunar
+powerManager: tlp
+bt: qbittorrent
+ed2k: amuled
+vpn: v2ray, v2raya
 
 # ranger
 
@@ -111,15 +122,11 @@ dhcpcd //分配ip
 CW使用的网络管理工具
 ~~~
 
-
-
 # 添加用户
 
 ~~~
 useradd -m -G wheel zzx //-m创建家目录，-G分配用户组，组名是wheel
 ~~~
-
-
 
 # 安装Arch Linux
 
@@ -164,9 +171,7 @@ sudo pacman -S xclip
 
 # 设置代理
 
-
 [privoxy配置与使用，终端貌似可以用](https://www.jianshu.com/p/a164fac07b4a?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation)
-
 ~~~
 安装shadowsocks-libev
 可以使用shadowsocks-qt5进行配置
