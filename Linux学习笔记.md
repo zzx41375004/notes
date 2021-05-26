@@ -7,12 +7,13 @@
 
 # auto mount
 
-[fstab UUID blkid](https://zhuanlan.zhihu.com/p/163001267 )<br>
-[thunar thunar-volman gvfs](https://zhouxiaobo.wordpress.com/2014/03/22/archlinux%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD%E5%87%8F%E5%B0%91%E8%B4%9F%E6%8B%85/)
+1. [fstab UUID blkid](https://zhuanlan.zhihu.com/p/163001267 )<br>
+2. [thunar thunar-volman gvfs](https://zhouxiaobo.wordpress.com/2014/03/22/archlinux%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD%E5%87%8F%E5%B0%91%E8%B4%9F%E6%8B%85/)
+3. udiskie
 
 # 工具介绍
 
-(website)[https://blog.csdn.net/lnxfei/article/details/43968609]
+[website](https://blog.csdn.net/lnxfei/article/details/43968609)
 
 1. bluetooth：blueberry
 2. filemanager(gui): thunar
@@ -20,6 +21,9 @@
 4. bt: qbittorrent
 5. ed2k: amuled
 6. vpn: v2ray, v2raya
+7. mount helper: bashmount
+8. xrandr helper: xlayoutdisplay
+9. screen shot: flameshot
 
 # ranger
 
