@@ -53,7 +53,7 @@ archlinux和debian类似，是一个linux内核操作系统。
 grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch --removable
 ```
 
-2. 修改 /etc/mkinitcpio.conf，将 HOOKS 中的block 和 keyboard 移动到 autodetect 前面。
+2. 修改 /etc/mkinitcpio.conf，将 HOOKS 中的 block 和 keyboard 移动到 autodetect 前面。
 
 ```
 HOOKS=(base systemd udev block keyboard autodetect modconf filesystems fsck)

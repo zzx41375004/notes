@@ -1,5 +1,16 @@
 # Linux学习
 
+# kvm
+
+[构建高性能虚拟机的第一步是要会安装虚拟机程序](https://www.bilibili.com/video/BV1Cg41137HS?t=708)
+[archwiki-libvirt](https://wiki.archlinux.org/title/Libvirt#Networks) <++>
+[default net is inactive](https://blog.csdn.net/qq_21398167/article/details/47777113)
+
+~~~
+sudo pacman -Ss dmidecode qemu libvirt iptables-nft dnsmasq
+用root权限配置default net似乎并不影响
+~~~
+
 # 声卡Master
 
 修改默认声卡
@@ -24,6 +35,7 @@
 7. mount helper: bashmount
 8. xrandr helper: xlayoutdisplay
 9. screen shot: flameshot
+10. PulseAudio pavucontrol [PulseAudio 是在GNOME 或 KDE等桌面环境中广泛使用的音频服务](https://wiki.archlinux.org/title/PulseAudio_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))
 
 # ranger
 
