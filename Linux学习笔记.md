@@ -1,5 +1,35 @@
 # Linux学习
 
+# grub
+
+~~~bash
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=Arch
+grub-mkconfig -o /boot/grub/grub.cfg
+~~~
+
+# xmodmap
+
+[xmodmap使用指南](https://blog.csdn.net/robertsong2004/article/details/36439597)
+[客制化键盘键位修改_Linux调整Ctrl,Alt,Super等键位布局的两种方法](https://blog.csdn.net/weixin_39656853/article/details/111712137)
+
+~~~bash
+xmodmap -pm
+xev
+~~~
+
+# lightdm启动dwm
+
+[https://blog.csdn.net/HideOnLie/article/details/107362380](https://blog.csdn.net/HideOnLie/article/details/107362380)
+
+会话，即在greeter中输入账号密码后将进入的程序。一般为WM或桌面。
+多数显示管理器会读取 /usr/share/xsessions/ 目录已获取可用的会话列表，此目录中包含各个 DM/WM 的标准 桌面文件。
+
+# xfce4更换窗口管理器
+
+[https://blog.51cto.com/jwang/1730724](https://blog.51cto.com/jwang/1730724)
+
+将文件/etc/xdg/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml 中的“xfwm4” 改成你需要的窗口管理器，如metacity。
+
 # kvm
 
 [构建高性能虚拟机的第一步是要会安装虚拟机程序](https://www.bilibili.com/video/BV1Cg41137HS?t=708)
@@ -14,13 +44,19 @@ sudo pacman -Ss dmidecode qemu libvirt iptables-nft dnsmasq
 # 声卡Master
 
 修改默认声卡
+
 [aplay l; /etc/asound.conf](https://blog.csdn.net/weixin_33881041/article/details/91706335)
+
+~~~bash
+查看声卡型号
+lspci  |grep -i audio
+~~~
 
 # auto mount
 
 1. [fstab UUID blkid](https://zhuanlan.zhihu.com/p/163001267 )<br>
 2. [thunar thunar-volman gvfs](https://zhouxiaobo.wordpress.com/2014/03/22/archlinux%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%87%AA%E5%8A%A8%E6%8C%82%E8%BD%BD%E5%87%8F%E5%B0%91%E8%B4%9F%E6%8B%85/)
-3. udiskie
+3. 守护进程udiskie
 
 # 工具介绍
 
@@ -53,7 +89,7 @@ fuser -mv /mnt/share
 
 [tutorior](https://blog.csdn.net/ly2020_/article/details/90647086?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control&dist_request_id=1332049.21902.16195245713015143&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7EBlogCommendFromMachineLearnPai2%7Edefault-1.control)
 ```
-subclient -L <UNC>
+smbclient -L <UNC>
 ```
 # bt and ed2k
 ```
